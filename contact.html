@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact | Stackly IT Solutions</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body class="p-contact">
+    <div id="bar"></div>
+    <div id="glow"></div>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="Stackly Logo">
+        </a>
+        <button class="burger" id="bg" aria-label="Menu">
+          <i></i><i></i><i></i>
+        </button>
+        <ul class="links" id="lk">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="on">Contact</a></li>
+          <li><button class="btn" data-login>Login</button></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <header
+        class="hero"
+        style="
+          --img: url('../images/img26.webp');
+        "
+      >
+        <canvas id="net"></canvas>
+        <div class="wrap">
+          <div class="sig">
+            <i></i><i style="animation-delay: 1s"></i
+            ><i style="animation-delay: 2s"></i><b>📡</b>
+          </div>
+          <h1>Let us <span>talk</span> technology</h1>
+          <p>
+            Tell us what you need. A Stackly engineer replies within one
+            business day.
+          </p>
+        </div>
+      </header>
+      <section class="sec s2">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Reach us directly</h2>
+            <p>Pick the channel that suits you.</p>
+          </div>
+          <div class="g">
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="images/img16.webp"
+                alt="Call"
+              />
+              <div class="ic">📞</div>
+              <h3>Call</h3>
+              <p>+91 98765 43210 (Mon to Sat, 9am to 7pm IST)</p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="images/img25.webp"
+                alt="Email"
+              />
+              <div class="ic">✉️</div>
+              <h3>Email</h3>
+              <p>hello@Stackly.com for sales, support@Stackly.com for help</p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=60"
+                alt="Visit"
+              />
+              <div class="ic">📍</div>
+              <h3>Visit</h3>
+              <p>12 Cherry Road, Salem, Tamil Nadu 636007</p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="images/img18.webp"
+                alt="Live chat"
+              />
+              <div class="ic">💬</div>
+              <h3>Live chat</h3>
+              <p>Chat with the helpdesk from your client portal after login</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+<!-- ========================================= -->
+
+<section class="sec s3 nc-contact-form">
+  <div class="wrap">
+
+    <div class="hd rv">
+      <span class="nc-contact-tag">LET'S CONNECT</span>
+      <h2>Let's build something <span>great together.</span></h2>
+      <p>
+        Tell us about your goals. Our technology team will help you
+        find the right solution for your business.
+      </p>
+    </div>
+
+    <div class="nc-contact-layout">
+
+      <!-- LEFT: CONTACT INFORMATION -->
+      <div class="nc-contact-info rv">
+        <div class="nc-contact-image">
+          <img
+            src="images/img20.webp"
+            alt="Technology team collaborating on a project"
+          >
+
+          <div class="nc-image-overlay"></div>
+
+          <div class="nc-image-content">
+            <span class="nc-live-indicator">AVAILABLE TO HELP</span>
+            <h3>Your next big idea starts with a conversation.</h3>
+            <p>
+              From cloud infrastructure to custom software, let's make
+              technology work harder for your business.
+            </p>
+          </div>
+
+          <div class="nc-image-badge">
+            <span class="nc-badge-icon">✦</span>
+            <div>
+              <strong>Solution focused</strong>
+              <small>Technology built around you</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="nc-contact-points">
+
+          <div class="nc-contact-point">
+            <span class="nc-point-icon">✉</span>
+            <div>
+              <small>EMAIL OUR TEAM</small>
+              <a href="mailto:hello@Stackly.com">hello@Stackly.com</a>
+            </div>
+          </div>
+
+          <div class="nc-contact-point">
+            <span class="nc-point-icon">◷</span>
+            <div>
+              <small>RESPONSE TIME</small>
+              <strong>Within one business day</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="nc-form-panel rv">
+        <div class="nc-form-heading">
+          <div>
+            <span class="nc-mini-label">PROJECT INQUIRY</span>
+            <h3>Tell us what you need</h3>
+            <p>Fields marked with * are required.</p>
+          </div>
+          <span class="nc-form-symbol">↗</span>
+        </div>
+
+        <form class="fm nc-premium-form" id="fm">
+
+          <div class="nc-field-row">
+            <div class="nc-field">
+              <label for="nm">Full name <span>*</span></label>
+              <input
+                id="nm"
+                name="name"
+                type="text"
+                placeholder="Your full name"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+            <div class="nc-field">
+              <label for="em">Work email <span>*</span></label>
+              <input
+                id="em"
+                name="email"
+                type="email"
+                placeholder="you@company.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="nc-field">
+            <label for="service">What can we help with? <span>*</span></label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Cloud migration">Cloud & infrastructure</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="Software development">Software development</option>
+              <option value="Managed IT">Managed IT services</option>
+              <option value="Data and AI">Data & artificial intelligence</option>
+              <option value="Other">Other requirements</option>
+            </select>
+          </div>
+
+          <div class="nc-field">
+            <label for="ms">Project details <span>*</span></label>
+            <textarea
+              id="ms"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your challenge, goals, or project..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="nc-form-bottom">
+            <p class="nc-privacy-note">
+              <span>⌑</span>
+              Your information stays private.
+            </p>
+
+            <button class="btn nc-submit-btn" type="submit">
+              <span>Send inquiry</span>
+              <span class="nc-submit-arrow">↗</span>
+            </button>
+          </div>
+
+          <p id="ok" class="nc-form-status" aria-live="polite"></p>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================== -->
+      <section class="sec s1">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Frequently asked questions</h2>
+            <p>Click a question to open it.</p>
+          </div>
+          <div style="max-width: 780px; margin: auto">
+            <div class="fq rv">
+              <button>How fast will you reply?<span>＋</span></button>
+              <div>
+                <p>
+                  Within one business day, and within 15 minutes for critical
+                  support tickets.
+                </p>
+              </div>
+            </div>
+            <div class="fq rv">
+              <button>Do you work with small businesses?<span>＋</span></button>
+              <div><p>Yes. Our Starter plan begins at $299 per month.</p></div>
+            </div>
+            <div class="fq rv">
+              <button>
+                Can you take over our existing systems?<span>＋</span>
+              </button>
+              <div>
+                <p>Yes. We audit, document and then run them under an SLA.</p>
+              </div>
+            </div>
+            <div class="fq rv">
+              <button>Where is my data stored?<span>＋</span></button>
+              <div>
+                <p>
+                  In the region you choose, encrypted at rest and in transit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec s2">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Support hours</h2>
+            <p>Always someone on shift.</p>
+          </div>
+          <div class="g">
+            <div class="card rv tilt">
+              <div class="ic">🕘</div>
+              <h3>Sales</h3>
+              <p>Mon to Sat, 9am to 7pm IST</p>
+            </div>
+            <div class="card rv tilt">
+              <div class="ic">🧑‍🔧</div>
+              <h3>Helpdesk</h3>
+              <p>Mon to Fri, 8am to 10pm IST</p>
+            </div>
+            <div class="card rv tilt">
+              <div class="ic">🚨</div>
+              <h3>Emergency</h3>
+              <p>24/7 for Business and Enterprise plans</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec s3">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Stay in the loop</h2>
+            <p>One practical IT email a month. No spam.</p>
+          </div>
+          <form class="nl" id="nl">
+            <input type="email" placeholder="Your email" required /><button
+              class="btn"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p id="nk" style="text-align: center; margin-top: 12px"></p>
+        </div>
+      </section>
+      <section
+        class="bn"
+        style="
+          --img: url(images/img25.webp);
+        "
+      >
+        <div class="rv">
+          <h2>We are one message away</h2>
+          <p>Sales, support and engineers ready to help.</p>
+        </div>
+        <span style="left: 8%; top: 18%">📞</span
+        ><span style="right: 10%; top: 22%; animation-delay: -2s">✉️</span
+        ><span style="left: 48%; bottom: 10%; animation-delay: -3s">💬</span>
+      </section>
+      <section class="sec s1">
+        <div class="wrap cta rv">
+          <h2>Prefer a call? We pick up.</h2>
+          <p>Book a free 30-minute consultation with a Stackly engineer.</p>
+          <a class="btn" href="error.html">Talk to an Expert</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap fg">
+        <div>
+          <a class="logo" href="index.html">NEXA<b>CORE</b></a>
+          <p>
+            Cloud, security, software and managed IT for growing businesses
+            since 2012.
+          </p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="projects.html">Projects</a><a href="about.html">About</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="services.html">Cloud</a
+          ><a href="services.html">Cybersecurity</a
+          ><a href="services.html">Software</a
+          ><a href="services.html">Data and AI</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="contact.html">hello@Stackly.com</a
+          ><a href="contact.html">+91 98765 43210</a
+          ><a href="contact.html">Salem, Tamil Nadu</a>
+        </div>
+      </div>
+      <p class="cp">© 2026 Stackly IT Solutions. All rights reserved.</p>
+    </footer>
+    <!-- <div class="modal" id="lm">
+      <form class="box" id="lf">
+        <button type="button" id="lc" aria-label="Close">×</button>
+        <h3>Welcome back</h3>
+        <p>Signing in as <b id="rl">Client</b></p>
+        <div class="role">
+          <button type="button" class="on" data-r="Client">👤 Client</button
+          ><button type="button" data-r="Admin">🛡️ Admin</button>
+        </div>
+        <input type="email" placeholder="Email address" required /><input
+          type="password"
+          placeholder="Password"
+          required
+        /><button class="btn" style="width: 100%">Login</button>
+      </form>
+    </div> -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home | Stackly IT Solutions</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="p-index">
+    <div id="bar"></div>
+    <div id="glow"></div>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="Stackly Logo">
+        </a>
+        <button class="burger" id="bg" aria-label="Menu">
+          <i></i><i></i><i></i>
+        </button>
+        <ul class="links" id="lk">
+          <li><a href="index.html" class="on">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn" data-login>Login</button></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <header
+        class="hero"
+        style="--img: url('../images/img26.webp');"
+      >
+        <canvas id="net"></canvas>
+        <div class="wrap">
+          <h1>Smart IT that keeps your business <span>always on</span></h1>
+          <p>
+            Stackly designs, builds and runs cloud, security and software
+            systems for companies that cannot afford downtime.
+          </p>
+          <div class="term" id="tm"></div>
+          <p style="margin: 24px auto 0">
+            <a class="btn" href="error.html">Get a Free Quote</a>
+            <a class="btn alt" href="error.html">Explore Services</a>
+          </p>
+        </div>
+      </header>
+      <section class="sec s2">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Numbers that speak</h2>
+            <p>Results from more than a decade of delivery.</p>
+          </div>
+          <div class="g">
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="450" data-s="+">0</div>
+              <p>Projects delivered</p>
+            </div>
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="99" data-s=".9%">0</div>
+              <p>Average uptime</p>
+            </div>
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="120" data-s="+">0</div>
+              <p>Certified engineers</p>
+            </div>
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="18" data-s="">0</div>
+              <p>Countries served</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ========================================= -->
+
+      <!-- <section class="sec s3">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>What we do</h2>
+            <p>Six core services, one accountable team.</p>
+          </div>
+          <div class="g">
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=60"
+                alt="Cloud Migration"
+              />
+              <div class="ic">☁️</div>
+              <h3>Cloud Migration</h3>
+              <p>
+                Move workloads to AWS, Azure or GCP with zero-downtime cutovers
+                and cost controls.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=60"
+                alt="Cybersecurity"
+              />
+              <div class="ic">🛡️</div>
+              <h3>Cybersecurity</h3>
+              <p>
+                24/7 monitoring, penetration testing and compliance for ISO
+                27001 and SOC 2.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=60"
+                alt="Custom Software"
+              />
+              <div class="ic">💻</div>
+              <h3>Custom Software</h3>
+              <p>
+                Web, mobile and API products built with agile sprints and clean
+                code.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=60"
+                alt="Data and AI"
+              />
+              <div class="ic">📊</div>
+              <h3>Data and AI</h3>
+              <p>
+                Dashboards, pipelines and machine-learning models that drive
+                decisions.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=60"
+                alt="Managed IT"
+              />
+              <div class="ic">🛠️</div>
+              <h3>Managed IT</h3>
+              <p>
+                Helpdesk, patching and monitoring with a guaranteed response
+                time.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60"
+                alt="Networking"
+              />
+              <div class="ic">🌐</div>
+              <h3>Networking</h3>
+              <p>
+                Secure SD-WAN, Wi-Fi and data-centre design for multi-site
+                offices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+
+<!-- ===== INDUSTRY SOLUTIONS ===== -->
+<section class="industry-section">
+  <div class="wrap">
+    <div class="hd rv">
+      <h2>Technology Built for Your Industry</h2>
+      <p>Purpose-built digital solutions for the challenges your business faces every day.</p>
+    </div>
+
+    <div class="industry-grid">
+      <article class="industry-card rv"
+        style="--industry-img:url('../images/img1.webp')">
+        <span class="industry-number">01 / HEALTHCARE</span>
+        <div class="industry-content">
+          <span class="industry-icon">✚</span>
+          <h3>Healthcare & Life Sciences</h3>
+          <p>Secure patient platforms, connected systems and reliable healthcare infrastructure.</p>
+          <a href="error.html">Explore solutions <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="industry-card rv"
+        style="--industry-img:url('../images/img2.webp')">
+        <span class="industry-number">02 / FINANCE</span>
+        <div class="industry-content">
+          <span class="industry-icon">◈</span>
+          <h3>Finance & Banking</h3>
+          <p>Resilient financial applications, fraud monitoring and compliance-ready systems.</p>
+          <a href="error.html">Explore solutions <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="industry-card rv"
+        style="--industry-img:url('../images/img3.webp')">
+        <span class="industry-number">03 / MANUFACTURING</span>
+        <div class="industry-content">
+          <span class="industry-icon">⚙</span>
+          <h3>Manufacturing</h3>
+          <p>Connected operations, smart automation and real-time production visibility.</p>
+          <a href="error.html">Explore solutions <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="industry-card rv"
+        style="--industry-img:url('../images/img4.webp')">
+        <span class="industry-number">04 / RETAIL</span>
+        <div class="industry-content">
+          <span class="industry-icon">▣</span>
+          <h3>Retail & E-commerce</h3>
+          <p>Scalable shopping experiences, faster checkouts and smarter business analytics.</p>
+          <a href="error.html">Explore solutions <span>↗</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+
+      <section class="sec s1">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Why teams choose Stackly</h2>
+            <p>Engineering depth with a service mindset.</p>
+          </div>
+          <div class="split">
+            <img
+              src="images/img5.webp"
+              alt="Server room"
+            />
+            <div class="rv l">
+              <h3>Built for reliability</h3>
+              <p>
+                Every system we ship is monitored, documented and backed by a
+                named engineer.
+              </p>
+              <p>Client retention 96%</p>
+              <div class="pb"><i style="--w: 96%"></i></div>
+              <p>On-time delivery 94%</p>
+              <div class="pb"><i style="--w: 94%"></i></div>
+              <p>Security audit pass rate 100%</p>
+              <div class="pb"><i style="--w: 100%"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- ===== FEATURED PROJECTS ===== -->
+<section class="projects-section">
+  <div class="wrap">
+    <div class="projects-heading rv">
+      <div>
+        <span class="eyebrow">SELECTED WORK / 2026</span>
+        <h2>Engineering Ideas Into <span>Impact.</span></h2>
+      </div>
+      <p>Explore examples of the technology challenges we help businesses solve.</p>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-feature rv">
+        <div class="project-image"
+          style="--project-img:url('../images/img5.webp')">
+          <span class="project-tag">CLOUD INFRASTRUCTURE</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-info">
+          <span>01 — CLOUD ENGINEERING</span>
+          <h3>Building a More Resilient Cloud</h3>
+          <p>A conceptual showcase of scalable infrastructure, deployment automation and resilient system architecture.</p>
+          <div class="project-tech">
+            <span>AWS</span><span>Docker</span><span>Kubernetes</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-feature rv">
+        <div class="project-image"
+          style="--project-img:url('../images/img6.webp')">
+          <span class="project-tag">CYBERSECURITY</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-info">
+          <span>02 — DIGITAL DEFENCE</span>
+          <h3>Security by Design</h3>
+          <p>A conceptual security initiative focused on visibility, threat detection and stronger access controls.</p>
+          <div class="project-tech">
+            <span>SIEM</span><span>Zero Trust</span><span>Automation</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-feature rv">
+        <div class="project-image"
+          style="--project-img:url('../images/img22.webp')">
+          <span class="project-tag">DATA & ANALYTICS</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <div class="project-info">
+          <span>03 — INTELLIGENT DATA</span>
+          <h3>From Data to Decisions</h3>
+          <p>A conceptual analytics platform bringing business metrics and operational insights into one view.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Power BI</span><span>APIs</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="projects-bottom rv">
+      <span>Have a complex technical challenge?</span>
+      <a class="btn" href="error.html">Discuss Your Project ↗</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PREMIUM HOW WE WORK ===== -->
+<section class="process-section">
+  <div class="process-bg"></div>
+
+  <div class="wrap">
+    <div class="process-heading hd rv">
+      <span class="process-eyebrow">
+        <i></i> OUR DELIVERY FRAMEWORK
+      </span>
+      <h2>From Vision to <span>Reality.</span></h2>
+      <p>
+        A transparent, engineering-led process that turns complex
+        challenges into reliable digital solutions.
+      </p>
+    </div>
+
+    <div class="process-timeline">
+
+      <article class="process-card rv">
+        <div class="process-top">
+          <span class="process-number">01</span>
+          <span class="process-symbol">⌕</span>
+        </div>
+        <span class="process-label">UNDERSTAND</span>
+        <h3>Discover</h3>
+        <p>
+          We explore your business goals, technical challenges,
+          priorities and budget to establish a clear direction.
+        </p>
+        <div class="process-bottom">
+          <span>01 / 05</span>
+          <span class="process-line"></span>
+        </div>
+      </article>
+
+      <article class="process-card rv">
+        <div class="process-top">
+          <span class="process-number">02</span>
+          <span class="process-symbol">⌘</span>
+        </div>
+        <span class="process-label">PLAN & ARCHITECT</span>
+        <h3>Design</h3>
+        <p>
+          We shape the system architecture, user experience
+          and technical roadmap before development begins.
+        </p>
+        <div class="process-bottom">
+          <span>02 / 05</span>
+          <span class="process-line"></span>
+        </div>
+      </article>
+
+      <article class="process-card rv">
+        <div class="process-top">
+          <span class="process-number">03</span>
+          <span class="process-symbol">⌨</span>
+        </div>
+        <span class="process-label">ENGINEER</span>
+        <h3>Build</h3>
+        <p>
+          Our team develops in focused sprints, validates
+          functionality and shares progress through regular demos.
+        </p>
+        <div class="process-bottom">
+          <span>03 / 05</span>
+          <span class="process-line"></span>
+        </div>
+      </article>
+
+      <article class="process-card rv">
+        <div class="process-top">
+          <span class="process-number">04</span>
+          <span class="process-symbol">↗</span>
+        </div>
+        <span class="process-label">GO LIVE</span>
+        <h3>Launch</h3>
+        <p>
+          We validate the release, coordinate deployment and
+          prepare rollback plans for a controlled transition.
+        </p>
+        <div class="process-bottom">
+          <span>04 / 05</span>
+          <span class="process-line"></span>
+        </div>
+      </article>
+
+      <article class="process-card rv">
+        <div class="process-top">
+          <span class="process-number">05</span>
+          <span class="process-symbol">∞</span>
+        </div>
+        <span class="process-label">KEEP IMPROVING</span>
+        <h3>Support</h3>
+        <p>
+          We help maintain performance through monitoring,
+          ongoing improvements and regular system reviews.
+        </p>
+        <div class="process-bottom">
+          <span>05 / 05</span>
+          <span class="process-line"></span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="process-footer rv">
+      <div class="process-footer-mark">N<span>/</span>C</div>
+      <p>
+        <strong>Clear process. Reliable engineering.</strong>
+        <span>Every stage moves your business forward.</span>
+      </p>
+      <a href="error.html" class="btn">
+        Start Your Project <span>↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================== -->
+
+      <section class="sec s3">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Client stories</h2>
+            <p>What our customers say after go-live.</p>
+          </div>
+          <div class="g">
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="images/imgper1.jpg"
+                alt="Retail group"
+              />
+              <div class="ic">⭐</div>
+              <h3>Retail group</h3>
+              <p>
+                Checkout downtime fell to zero after the cloud move. Support
+                answers in minutes.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="images/person4.webp"
+                alt="Fin-tech start-up"
+              />
+              <div class="ic">⭐</div>
+              <h3>Fin-tech start-up</h3>
+              <p>
+                They passed our SOC 2 audit in eight weeks. Calm, expert and
+                clear.
+              </p>
+            </div>
+            <div class="card rv tilt">
+              <img
+                class="ci"
+                src="images/imgper3.jpg"
+                alt="Hospital network"
+              />
+              <div class="ic">⭐</div>
+              <h3>Hospital network</h3>
+              <p>
+                The new patient portal handles 40,000 logins a day without a
+                hiccup.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ======================================== -->
+
+      <section class="sec s1">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Our technology stack</h2>
+            <p>Tools we use every day.</p>
+          </div>
+          <div class="mq">
+            <div>
+              <span>AWS</span><span>Azure</span><span>Google Cloud</span
+              ><span>Kubernetes</span><span>Docker</span><span>React</span
+              ><span>Node.js</span><span>Python</span><span>Java</span
+              ><span>Terraform</span><span>Splunk</span><span>Cisco</span
+              ><span>AWS</span><span>Azure</span><span>Google Cloud</span
+              ><span>Kubernetes</span><span>Docker</span><span>React</span
+              ><span>Node.js</span><span>Python</span><span>Java</span
+              ><span>Terraform</span><span>Splunk</span><span>Cisco</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ============================================= -->
+
+      <section
+        class="bn"
+        style="
+          --img: url('../images/img8.webp');
+        "
+      >
+        <div class="rv">
+          <h2>Technology that never sleeps</h2>
+          <p>Monitoring, automation and engineers working around the clock.</p>
+        </div>
+        <span style="left: 8%; top: 18%">☁️</span
+        ><span style="right: 10%; top: 22%; animation-delay: -2s">🔒</span
+        ><span style="left: 48%; bottom: 10%; animation-delay: -3s">⚙️</span>
+      </section>
+
+
+<!-- ===== Stackly COMMAND CENTER ===== -->
+<section class="command-section"
+  style="--command-bg:url('../images/img23.webp')">
+
+  <div class="command-orbit orbit-one"></div>
+  <div class="command-orbit orbit-two"></div>
+
+  <div class="wrap command-layout">
+    <div class="command-copy rv">
+      <span class="command-label">
+        <i></i> ENGINEERED FOR CONTINUITY
+      </span>
+
+      <h2>Your Business Can't Pause.<br>
+        <span>Neither Should Your Technology.</span>
+      </h2>
+
+      <p>
+        From cloud infrastructure to cybersecurity, we help
+        businesses build dependable systems designed for
+        performance, visibility and growth.
+      </p>
+
+      <div class="command-actions">
+        <a href="error.html" class="btn">Discover Our Capabilities ↗</a>
+        <a href="error.html" class="command-link">Talk to Our Team →</a>
+      </div>
+    </div>
+
+    <div class="command-panel rv">
+      <div class="command-panel-head">
+        <div>
+          <span class="panel-overline">Stackly / SYSTEMS</span>
+          <h3>Infrastructure Overview</h3>
+        </div>
+        <span class="panel-live"><i></i> LIVE CONCEPT</span>
+      </div>
+
+      <div class="command-status">
+        <div class="status-icon">⌘</div>
+        <div>
+          <strong>Cloud Infrastructure</strong>
+          <span>Availability monitoring</span>
+        </div>
+        <b>●</b>
+      </div>
+
+      <div class="command-status">
+        <div class="status-icon">⌁</div>
+        <div>
+          <strong>Security Operations</strong>
+          <span>Threat visibility</span>
+        </div>
+        <b>●</b>
+      </div>
+
+      <div class="command-status">
+        <div class="status-icon">↗</div>
+        <div>
+          <strong>Application Performance</strong>
+          <span>Performance monitoring</span>
+        </div>
+        <b>●</b>
+      </div>
+
+      <div class="command-terminal">
+        <span>Stackly@operations:~$</span>
+        <p>systems --overview</p>
+        <div><i></i> Monitoring architecture and infrastructure</div>
+        <div><i></i> Automated workflows and observability</div>
+        <div><i></i> Security and reliability practices</div>
+      </div>
+
+      <p class="command-note">
+        <span>※</span> Illustrative interface — not a live monitoring feed.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+
+      <section class="sec s2">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Life at Stackly</h2>
+            <p>Code, coffee and calm incident rooms.</p>
+          </div>
+          <div class="gal rv">
+            <img
+              src="images/img10.webp"
+              alt="dev"
+              loading="lazy"
+            /><img
+              src="images/img11.webp"
+              alt="mon"
+              loading="lazy"
+            /><img
+              src="images/img22.webp"
+              alt="dash"
+              loading="lazy"
+            /><img
+              src="images/img6.webp"
+              alt="cyber"
+              loading="lazy"
+            /><img
+              src="images/img12.webp"
+              alt="team"
+              loading="lazy"
+            /><img
+              src="images/img23.webp"
+              alt="chip"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+
+<!-- ===== ENGAGEMENT MODELS ===== -->
+<section class="engagement-section">
+  <div class="wrap">
+    <div class="hd rv">
+      <h2>One Partner. Three Ways to Scale.</h2>
+      <p>Choose the engagement model that fits your team's goals, resources and growth plans.</p>
+    </div>
+
+    <div class="engagement-grid">
+      <article class="engagement-card rv">
+        <div class="engagement-top">
+          <span class="engagement-icon">⌘</span>
+          <span class="engagement-index">MODEL / 01</span>
+        </div>
+        <h3>Project-Based Delivery</h3>
+        <p>From initial concept to production launch, get a dedicated team for a clearly defined outcome.</p>
+        <ul>
+          <li>Defined scope and milestones</li>
+          <li>Transparent project planning</li>
+          <li>Testing and launch support</li>
+        </ul>
+        <a href="error.html">Plan a project <span>↗</span></a>
+      </article>
+
+      <article class="engagement-card engagement-featured rv">
+        <span class="engagement-badge">ONGOING PARTNERSHIP</span>
+        <div class="engagement-top">
+          <span class="engagement-icon">∞</span>
+          <span class="engagement-index">MODEL / 02</span>
+        </div>
+        <h3>Managed IT Services</h3>
+        <p>Keep your technology maintained, monitored and aligned with your business operations.</p>
+        <ul>
+          <li>Infrastructure management</li>
+          <li>Monitoring and maintenance</li>
+          <li>Ongoing technical support</li>
+        </ul>
+        <a href="error.html">Explore managed IT <span>↗</span></a>
+      </article>
+
+      <article class="engagement-card rv">
+        <div class="engagement-top">
+          <span class="engagement-icon">↗</span>
+          <span class="engagement-index">MODEL / 03</span>
+        </div>
+        <h3>Dedicated Engineering</h3>
+        <p>Extend your in-house capabilities with engineering expertise tailored to your roadmap.</p>
+        <ul>
+          <li>Flexible team collaboration</li>
+          <li>Specialist technical skills</li>
+          <li>Continuous product development</li>
+        </ul>
+        <a href="error.html">Build your team <span>↗</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================== -->
+
+      <section class="sec s3">
+        <div class="wrap cta rv">
+          <h2>Ready to modernise your IT?</h2>
+          <p>Book a free 30-minute consultation with a Stackly engineer.</p>
+          <a class="btn" href="error.html">Talk to an Expert</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap fg">
+        <div>
+          <a class="logo" href="index.html">NEXA<b>CORE</b></a>
+          <p>
+            Cloud, security, software and managed IT for growing businesses
+            since 2012.
+          </p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="projects.html">Projects</a><a href="about.html">About</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="services.html">Cloud</a
+          ><a href="services.html">Cybersecurity</a
+          ><a href="services.html">Software</a
+          ><a href="services.html">Data and AI</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="contact.html">hello@Stackly.com</a
+          ><a href="contact.html">+91 98765 43210</a
+          ><a href="contact.html">Salem, Tamil Nadu</a>
+        </div>
+      </div>
+      <p class="cp">© 2026 Stackly IT Solutions. All rights reserved.</p>
+    </footer>
+    <div class="modal" id="lm">
+      <form class="box" id="lf">
+        <button type="button" id="lc" aria-label="Close">×</button>
+        <h3>Welcome back</h3>
+        <p>Signing in as <b id="rl">Client</b></p>
+        <div class="role">
+          <button type="button" class="on" data-r="Client">👤 Client</button
+          ><button type="button" data-r="Admin">🛡️ Admin</button>
+        </div>
+        <input type="email" placeholder="Email address" required /><input
+          type="password"
+          placeholder="Password"
+          required
+        /><button class="btn" style="width: 100%">Login</button>
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

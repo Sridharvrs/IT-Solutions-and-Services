@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Stackly IT Solutions</title>
+  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <main class="signup-page">
+
+    <!-- LEFT BRANDING PANEL -->
+    <section class="signup-visual">
+
+      <div class="visual-overlay"></div>
+
+      <nav class="signup-nav">
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="Stackly Logo">
+        </a>
+
+        <a href="index.html" class="back-home">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to website
+        </a>
+      </nav>
+
+      <div class="visual-content">
+
+        <span class="visual-tag">
+          <i class="fa-solid fa-circle-nodes"></i>
+          BUILD YOUR DIGITAL FUTURE
+        </span>
+
+        <h1>
+          Start your journey with
+          <span>Stackly.</span>
+        </h1>
+
+        <p>
+          Create your account and connect with powerful technology
+          solutions designed to help your business work smarter,
+          move faster and grow further.
+        </p>
+
+        <div class="visual-points">
+
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <span>Smart cloud solutions</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Advanced digital security</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <span>Innovative software services</span>
+          </div>
+
+        </div>
+
+        <div class="visual-quote">
+          <span class="quote-line"></span>
+          <p>Technology is better when it moves your business forward.</p>
+        </div>
+
+      </div>
+
+      <div class="visual-footer">
+        <span>INNOVATE. CONNECT. GROW.</span>
+        <span>© <span id="signupYear"></span> Stackly</span>
+      </div>
+
+      <div class="visual-orbit orbit-one"></div>
+      <div class="visual-orbit orbit-two"></div>
+      <div class="visual-glow"></div>
+
+    </section>
+
+
+    <!-- RIGHT SIGNUP PANEL -->
+    <section class="signup-main">
+
+      <div class="signup-container">
+
+        <div class="mobile-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-icon">
+              <i class="fa-solid fa-cube"></i>
+            </span>
+            <span>NEXA<span>CORE</span></span>
+          </a>
+        </div>
+
+
+        <!-- HEADING -->
+        <div class="signup-heading">
+
+          <span class="heading-label">GET STARTED TODAY</span>
+
+          <h2>Create your <span>account</span></h2>
+
+          <p>
+            Join Stackly and get started with smarter technology solutions.
+          </p>
+
+        </div>
+
+
+        <!-- SIGNUP FORM -->
+        <form id="signupForm" class="signup-form" novalidate>
+
+          <!-- FULL NAME -->
+          <div class="form-group">
+
+            <label for="name">Full name</label>
+
+            <div class="input-wrap">
+              <i class="fa-regular fa-user input-icon"></i>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required>
+            </div>
+
+          </div>
+
+
+          <!-- EMAIL -->
+          <div class="form-group">
+
+            <label for="signupEmail">Email address</label>
+
+            <div class="input-wrap">
+              <i class="fa-regular fa-envelope input-icon"></i>
+
+              <input
+                type="email"
+                id="signupEmail"
+                name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required>
+            </div>
+
+          </div>
+
+
+          <!-- PASSWORD -->
+          <div class="form-group">
+
+            <label for="signupPassword">Password</label>
+
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock input-icon"></i>
+
+              <input
+                type="password"
+                id="signupPassword"
+                name="password"
+                placeholder="Create a strong password"
+                autocomplete="new-password"
+                required>
+
+              <button
+                type="button"
+                class="password-toggle"
+                id="togglePassword"
+                aria-label="Show password">
+
+                <i class="fa-regular fa-eye"></i>
+
+              </button>
+            </div>
+
+            <div class="password-hint">
+              <i class="fa-solid fa-circle-info"></i>
+              Use at least 8 characters with uppercase, lowercase,
+              number and special character.
+            </div>
+
+          </div>
+
+
+          <!-- CONFIRM PASSWORD -->
+          <div class="form-group">
+
+            <label for="confirmPassword">Confirm password</label>
+
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock input-icon"></i>
+
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Re-enter your password"
+                autocomplete="new-password"
+                required>
+
+              <button
+                type="button"
+                class="password-toggle"
+                id="toggleConfirmPassword"
+                aria-label="Show password">
+
+                <i class="fa-regular fa-eye"></i>
+
+              </button>
+            </div>
+
+          </div>
+
+
+          <!-- TERMS -->
+          <div class="terms-row">
+
+            <label class="terms-option">
+
+              <input
+                type="checkbox"
+                name="terms"
+                id="terms">
+
+              <span class="custom-check"></span>
+
+              <span class="terms-text">
+                I agree to the
+                <a href="terms.html" target="_blank">Terms of Service</a>
+                and
+                <a href="privacy.html" target="_blank">Privacy Policy</a>.
+              </span>
+
+            </label>
+
+          </div>
+
+
+          <!-- MESSAGE -->
+          <div
+            id="signupMessage"
+            class="ev-message"
+            role="status"
+            aria-live="polite">
+          </div>
+
+
+          <!-- SUBMIT -->
+          <button type="submit" class="ev-submit">
+
+            <span>Create Account</span>
+
+            <span class="ev-submit-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </button>
+
+        </form>
+
+
+        <!-- LOGIN LINK -->
+        <div class="signup-bottom">
+
+          <p>
+            Already have an account?
+            <a href="login.html">Sign in</a>
+          </p>
+
+          <div class="secure-note">
+            <i class="fa-solid fa-shield-halved"></i>
+            Your information is protected
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/signup.js"></script>
+
+  <script>
+    document.getElementById("signupYear").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>

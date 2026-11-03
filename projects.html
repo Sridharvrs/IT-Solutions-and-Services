@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects | Stackly IT Solutions</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body class="p-projects">
+    <div id="bar"></div>
+    <div id="glow"></div>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="Stackly Logo">
+        </a>
+        <button class="burger" id="bg" aria-label="Menu">
+          <i></i><i></i><i></i>
+        </button>
+        <ul class="links" id="lk">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="on">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="btn" data-login>Login</button></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <header
+        class="hero"
+        style="
+          --img: url('../images/img19.webp');
+        "
+      >
+        <canvas id="net"></canvas>
+        <div class="wrap">
+          <div class="big">WORK</div>
+          <h1>Projects we are <span>proud</span> of</h1>
+          <p>Real systems, real numbers, running in production today.</p>
+        </div>
+      </header>
+
+<!-- ============================================= -->
+
+<section class="sec s2 nc-project-gallery">
+  <div class="wrap">
+
+    <div class="hd rv">
+      <h2>Project gallery</h2>
+      <p>Explore the solutions, systems, and results we've delivered across industries.</p>
+    </div>
+
+    <div class="tabs fl nc-project-filters" role="group" aria-label="Filter projects">
+      <button class="on" data-f="all" aria-pressed="true">All projects <span>06</span></button>
+      <button data-f="cloud" aria-pressed="false">Cloud <span>02</span></button>
+      <button data-f="sec" aria-pressed="false">Security <span>02</span></button>
+      <button data-f="soft" aria-pressed="false">Software <span>01</span></button>
+      <button data-f="data" aria-pressed="false">Data &amp; AI <span>01</span></button>
+    </div>
+
+    <div class="g nc-project-grid">
+
+      <!-- PROJECT 01 -->
+      <article class="card pic tilt rv nc-project-card" data-c="cloud">
+        <div class="nc-project-image">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80"
+            alt="Cloud infrastructure and global network"
+            loading="lazy"
+          />
+          <span class="nc-project-category">
+            <i class="fa-solid fa-cloud"></i> CLOUD ENGINEERING
+          </span>
+          <span class="nc-project-index">01 / 06</span>
+          <div class="nc-project-image-overlay"></div>
+        </div>
+
+        <div class="nc-project-content">
+          <div class="nc-project-title-row">
+            <h3>Retail cloud move</h3>
+            <span class="nc-project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p>Migrated 120 services to AWS in just 10 weeks, modernizing the client's cloud infrastructure.</p>
+          <div class="nc-project-bottom">
+            <div class="nc-project-result">
+              <strong>120</strong>
+              <span>Services migrated</span>
+            </div>
+            <span class="nc-project-tag">AWS Migration</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 02 -->
+      <article class="card pic tilt rv nc-project-card" data-c="sec">
+        <div class="nc-project-image">
+          <img
+            src="images/img27.jpg"
+            alt="Cybersecurity operations and digital protection"
+            loading="lazy"
+          />
+          <span class="nc-project-category">
+            <i class="fa-solid fa-shield-halved"></i> CYBERSECURITY
+          </span>
+          <span class="nc-project-index">02 / 06</span>
+          <div class="nc-project-image-overlay"></div>
+        </div>
+
+        <div class="nc-project-content">
+          <div class="nc-project-title-row">
+            <h3>Bank SOC rollout</h3>
+            <span class="nc-project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p>Strengthened security operations and dramatically accelerated incident response.</p>
+          <div class="nc-project-bottom">
+            <div class="nc-project-result">
+              <strong>12 min</strong>
+              <span>Response time</span>
+            </div>
+            <span class="nc-project-tag">Security Operations</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 03 -->
+      <article class="card pic tilt rv nc-project-card" data-c="soft">
+        <div class="nc-project-image">
+          <img
+            src="images/img16.webp"
+            alt="Modern technology workspace for software development"
+            loading="lazy"
+          />
+          <span class="nc-project-category">
+            <i class="fa-solid fa-code"></i> SOFTWARE DEVELOPMENT
+          </span>
+          <span class="nc-project-index">03 / 06</span>
+          <div class="nc-project-image-overlay"></div>
+        </div>
+
+        <div class="nc-project-content">
+          <div class="nc-project-title-row">
+            <h3>Logistics app</h3>
+            <span class="nc-project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p>Delivered a scalable driver application designed for everyday fleet operations.</p>
+          <div class="nc-project-bottom">
+            <div class="nc-project-result">
+              <strong>8,000</strong>
+              <span>Daily users</span>
+            </div>
+            <span class="nc-project-tag">Mobile Application</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 04 -->
+      <article class="card pic tilt rv nc-project-card" data-c="data">
+        <div class="nc-project-image">
+          <img
+            src="images/img19.webp"
+            alt="Business analytics dashboard with data visualizations"
+            loading="lazy"
+          />
+          <span class="nc-project-category">
+            <i class="fa-solid fa-chart-line"></i> DATA &amp; ANALYTICS
+          </span>
+          <span class="nc-project-index">04 / 06</span>
+          <div class="nc-project-image-overlay"></div>
+        </div>
+
+        <div class="nc-project-content">
+          <div class="nc-project-title-row">
+            <h3>Sales analytics</h3>
+            <span class="nc-project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p>Replaced repetitive reporting with live dashboards for clearer business decisions.</p>
+          <div class="nc-project-bottom">
+            <div class="nc-project-result">
+              <strong>40</strong>
+              <span>Reports replaced</span>
+            </div>
+            <span class="nc-project-tag">Business Intelligence</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 05 -->
+      <article class="card pic tilt rv nc-project-card" data-c="cloud">
+        <div class="nc-project-image">
+          <img
+            src="images/img5.webp"
+            alt="Enterprise servers and data centre infrastructure"
+            loading="lazy"
+          />
+          <span class="nc-project-category">
+            <i class="fa-solid fa-server"></i> CLOUD OPTIMIZATION
+          </span>
+          <span class="nc-project-index">05 / 06</span>
+          <div class="nc-project-image-overlay"></div>
+        </div>
+
+        <div class="nc-project-content">
+          <div class="nc-project-title-row">
+            <h3>Data-centre exit</h3>
+            <span class="nc-project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p>Consolidated infrastructure by closing two server rooms and moving to a more efficient setup.</p>
+          <div class="nc-project-bottom">
+            <div class="nc-project-result">
+              <strong>38%</strong>
+              <span>Annual savings</span>
+            </div>
+            <span class="nc-project-tag">Infrastructure</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 06 -->
+      <article class="card pic tilt rv nc-project-card" data-c="sec">
+        <div class="nc-project-image">
+          <img
+            src="images/img6.webp"
+            alt="Digital security systems and network protection"
+            loading="lazy"
+          />
+          <span class="nc-project-category">
+            <i class="fa-solid fa-lock"></i> NETWORK SECURITY
+          </span>
+          <span class="nc-project-index">06 / 06</span>
+          <div class="nc-project-image-overlay"></div>
+        </div>
+
+        <div class="nc-project-content">
+          <div class="nc-project-title-row">
+            <h3>Zero Trust network</h3>
+            <span class="nc-project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p>Introduced multi-factor authentication and device verification across the organization.</p>
+          <div class="nc-project-bottom">
+            <div class="nc-project-result">
+              <strong>3,000</strong>
+              <span>Staff covered</span>
+            </div>
+            <span class="nc-project-tag">Zero Trust</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="nc-project-footer rv">
+      <div class="nc-project-footer-mark">
+        <i class="fa-solid fa-layer-group"></i>
+      </div>
+      <div class="nc-project-footer-copy">
+        <strong>Your next success story starts here.</strong>
+        <p>Let's build a solution around your business goals.</p>
+      </div>
+      <a href="error.html" class="nc-project-cta">
+        Start a project <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================== -->
+
+      <section class="sec s3">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Case study: FreshKart</h2>
+            <p>How we rebuilt a grocery platform before the festival season.</p>
+          </div>
+          <div class="split">
+            <img
+              src="images/img12.webp"
+              alt="Team"
+            />
+            <div class="rv">
+              <h3>Challenge</h3>
+              <p>Orders crashed at peak hours and releases took three weeks.</p>
+              <h3>Solution</h3>
+              <p>
+                Containerised microservices on Kubernetes, auto-scaling and
+                automated testing pipelines.
+              </p>
+              <h3>Outcome</h3>
+              <p>
+                Zero downtime on the busiest sale day and releases every
+                morning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ============================================== -->
+
+      <section class="sec s1">
+        <div class="wrap">
+          <div class="hd rv">
+            <h2>Results in numbers</h2>
+            <p>Measured after 12 months.</p>
+          </div>
+          <div class="g">
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="62" data-s="%">0</div>
+              <p>Faster releases</p>
+            </div>
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="38" data-s="%">0</div>
+              <p>Lower hosting cost</p>
+            </div>
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="99" data-s="%">0</div>
+              <p>Fewer incidents</p>
+            </div>
+            <div class="card rv tilt" style="text-align: center">
+              <div class="num" data-n="4" data-s="x">0</div>
+              <p>Traffic handled</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ================================================ -->
+
+
+<section class="sec s2 nc-industries">
+
+  <div class="nc-industries-bg"></div>
+  <div class="wrap nc-industries-content">
+
+    <div class="hd rv">
+      <h2>Industries we serve</h2>
+      <p>Domain expertise meets technology built around your business.</p>
+    </div>
+
+    <div class="nc-industry-grid">
+
+      <!-- Banking -->
+      <article class="nc-industry-card rv tilt">
+        <div class="nc-industry-image">
+          <img
+            src="images/img27.jpg"
+            alt="Digital banking and secure financial technology"
+            loading="lazy"
+          />
+          <span class="nc-industry-number">01</span>
+          <span class="nc-industry-icon">🏦</span>
+          <div class="nc-industry-overlay"></div>
+        </div>
+        <div class="nc-industry-content">
+          <span class="nc-industry-label">FINANCIAL TECHNOLOGY</span>
+          <h3>Banking &amp; Finance</h3>
+          <p>Protect financial operations with secure payment systems, fraud analytics, and compliance-focused technology.</p>
+          <div class="nc-industry-tags">
+            <span>Payment Security</span>
+            <span>Fraud Analytics</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Healthcare -->
+      <article class="nc-industry-card rv tilt">
+        <div class="nc-industry-image">
+          <img
+            src="images/img26.webp"
+            alt="Technology professionals collaborating on digital solutions"
+            loading="lazy"
+          />
+          <span class="nc-industry-number">02</span>
+          <span class="nc-industry-icon">🏥</span>
+          <div class="nc-industry-overlay"></div>
+        </div>
+        <div class="nc-industry-content">
+          <span class="nc-industry-label">DIGITAL HEALTH</span>
+          <h3>Healthcare</h3>
+          <p>Enable better digital healthcare experiences through secure patient portals and reliable records systems.</p>
+          <div class="nc-industry-tags">
+            <span>Patient Portals</span>
+            <span>Data Protection</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Retail -->
+      <article class="nc-industry-card rv tilt">
+        <div class="nc-industry-image">
+          <img
+            src="images/img16.webp"
+            alt="Modern computer technology for retail operations"
+            loading="lazy"
+          />
+          <span class="nc-industry-number">03</span>
+          <span class="nc-industry-icon">🛒</span>
+          <div class="nc-industry-overlay"></div>
+        </div>
+        <div class="nc-industry-content">
+          <span class="nc-industry-label">COMMERCE &amp; GROWTH</span>
+          <h3>Retail &amp; E-commerce</h3>
+          <p>Deliver seamless shopping experiences with scalable storefronts and synchronized inventory systems.</p>
+          <div class="nc-industry-tags">
+            <span>E-commerce</span>
+            <span>Inventory Systems</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Manufacturing -->
+      <article class="nc-industry-card rv tilt">
+        <div class="nc-industry-image">
+          <img
+            src="images/img23.webp"
+            alt="Electronic components and connected industrial technology"
+            loading="lazy"
+          />
+          <span class="nc-industry-number">04</span>
+          <span class="nc-industry-icon">🏭</span>
+          <div class="nc-industry-overlay"></div>
+        </div>
+        <div class="nc-industry-content">
+          <span class="nc-industry-label">INDUSTRY 4.0</span>
+          <h3>Manufacturing</h3>
+          <p>Connect industrial operations with IoT dashboards, connected equipment, and dependable plant networks.</p>
+          <div class="nc-industry-tags">
+            <span>Industrial IoT</span>
+            <span>Smart Operations</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Education -->
+      <article class="nc-industry-card rv tilt">
+        <div class="nc-industry-image">
+          <img
+            src="images/img12.webp"
+            alt="Collaborative workspace for learning and technology"
+            loading="lazy"
+          />
+          <span class="nc-industry-number">05</span>
+          <span class="nc-industry-icon">🎓</span>
+          <div class="nc-industry-overlay"></div>
+        </div>
+        <div class="nc-industry-content">
+          <span class="nc-industry-label">CONNECTED LEARNING</span>
+          <h3>Education</h3>
+          <p>Support modern learning environments with digital learning platforms and reliable campus connectivity.</p>
+          <div class="nc-industry-tags">
+            <span>Learning Platforms</span>
+            <span>Campus Networks</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Logistics -->
+      <article class="nc-industry-card rv tilt">
+        <div class="nc-industry-image">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+            alt="Global digital connectivity supporting logistics operations"
+            loading="lazy"
+          />
+          <span class="nc-industry-number">06</span>
+          <span class="nc-industry-icon">🚚</span>
+          <div class="nc-industry-overlay"></div>
+        </div>
+        <div class="nc-industry-content">
+          <span class="nc-industry-label">SMART LOGISTICS</span>
+          <h3>Logistics &amp; Supply Chain</h3>
+          <p>Improve visibility and coordination through fleet tracking, route optimization, and connected systems.</p>
+          <div class="nc-industry-tags">
+            <span>Fleet Tracking</span>
+            <span>Route Optimization</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="nc-industry-footer rv">
+      <div class="nc-industry-footer-icon">✦</div>
+      <div class="nc-industry-footer-copy">
+        <strong>Your industry. Our technology expertise.</strong>
+        <p>Let's explore the right digital solutions for your business.</p>
+      </div>
+      <a href="error.html" class="nc-industry-cta">
+        Discuss your project <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================ -->
+<!-- ===== CLIENT FEEDBACK ===== -->
+<section class="sec s3 nc-testimonials">
+  <div class="wrap">
+
+    <div class="hd rv">
+      <span class="nc-testimonials-eyebrow">
+        <span class="nc-live-dot"></span>
+        CLIENT SUCCESS STORIES
+      </span>
+      <h2>Trusted by teams that <span>build the future.</span></h2>
+      <p>Real partnerships. Meaningful results. Technology that moves businesses forward.</p>
+    </div>
+
+    <div class="nc-testimonial-grid">
+
+      <!-- Testimonial 1 -->
+      <article class="nc-testimonial-card rv tilt">
+        <div class="nc-testimonial-top">
+          <span class="nc-quote-mark">“</span>
+          <div class="nc-rating" aria-label="5 out of 5 stars">
+            <span>★★★★★</span>
+          </div>
+        </div>
+
+        <p class="nc-testimonial-text">
+          Stackly felt like an extension of our own team. They understood our
+          vision, moved quickly, and helped us build a platform ready for our
+          next stage of growth.
+        </p>
+
+        <div class="nc-testimonial-project">
+          <span class="nc-project-dot"></span>
+          E-commerce Platform
+        </div>
+
+        <div class="nc-testimonial-divider"></div>
+
+        <div class="nc-testimonial-author">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&h=160&q=80"
+            alt="FreshKart client representative"
+            loading="lazy"
+          />
+
+          <div class="nc-author-info">
+            <h3>CTO, FreshKart</h3>
+            <p>Technology & Retail</p>
+          </div>
+
+          <span class="nc-author-arrow">↗</span>
+        </div>
+      </article>
+
+      <!-- Testimonial 2 -->
+      <article class="nc-testimonial-card nc-testimonial-featured rv tilt">
+        <div class="nc-testimonial-top">
+          <span class="nc-quote-mark">“</span>
+          <div class="nc-rating" aria-label="5 out of 5 stars">
+            <span>★★★★★</span>
+          </div>
+        </div>
+
+        <p class="nc-testimonial-text">
+          Their security team identified threats that had gone unnoticed for
+          months. Their proactive approach gave us greater visibility,
+          confidence, and control over our security operations.
+        </p>
+
+        <div class="nc-testimonial-project">
+          <span class="nc-project-dot"></span>
+          Cybersecurity & SOC
+        </div>
+
+        <div class="nc-testimonial-divider"></div>
+
+        <div class="nc-testimonial-author">
+          <img
+            src="images/imgper3.jpg"
+            alt="MetroBank client representative"
+            loading="lazy"
+          />
+
+          <div class="nc-author-info">
+            <h3>CISO, MetroBank</h3>
+            <p>Banking & Security</p>
+          </div>
+
+          <span class="nc-author-arrow">↗</span>
+        </div>
+      </article>
+
+      <!-- Testimonial 3 -->
+      <article class="nc-testimonial-card rv tilt">
+        <div class="nc-testimonial-top">
+          <span class="nc-quote-mark">“</span>
+          <div class="nc-rating" aria-label="5 out of 5 stars">
+            <span>★★★★★</span>
+          </div>
+        </div>
+
+        <p class="nc-testimonial-text">
+          From the first planning session to launch, the team kept everything
+          on track. We received a scalable application built around our
+          business needs and future ambitions.
+        </p>
+
+        <div class="nc-testimonial-project">
+          <span class="nc-project-dot"></span>
+          Mobile App Development
+        </div>
+
+        <div class="nc-testimonial-divider"></div>
+
+        <div class="nc-testimonial-author">
+          <img
+            src="images/imgper1.jpg"
+            alt="RouteGo client representative"
+            loading="lazy"
+          />
+
+          <div class="nc-author-info">
+            <h3>Founder, RouteGo</h3>
+            <p>Mobility & Logistics</p>
+          </div>
+
+          <span class="nc-author-arrow">↗</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="nc-testimonial-bottom rv">
+      <span class="nc-bottom-line"></span>
+      <p>Built on collaboration. Strengthened by trust.</p>
+      <span class="nc-bottom-line"></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================= -->
+      <section class="sec s1">
+        <div class="wrap cta rv">
+          <h2>Have a project in mind?</h2>
+          <p>Book a free 30-minute consultation with a Stackly engineer.</p>
+          <a class="btn" href="error.html">Talk to an Expert</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap fg">
+        <div>
+          <a class="logo" href="index.html">NEXA<b>CORE</b></a>
+          <p>
+            Cloud, security, software and managed IT for growing businesses
+            since 2012.
+          </p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="projects.html">Projects</a><a href="about.html">About</a
+          ><a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="services.html">Cloud</a
+          ><a href="services.html">Cybersecurity</a
+          ><a href="services.html">Software</a
+          ><a href="services.html">Data and AI</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="contact.html">hello@Stackly.com</a
+          ><a href="contact.html">+91 98765 43210</a
+          ><a href="contact.html">Salem, Tamil Nadu</a>
+        </div>
+      </div>
+      <p class="cp">© 2026 Stackly IT Solutions. All rights reserved.</p>
+    </footer>
+
+    <!-- <div class="modal" id="lm">
+      <form class="box" id="lf">
+        <button type="button" id="lc" aria-label="Close">×</button>
+        <h3>Welcome back</h3>
+        <p>Signing in as <b id="rl">Client</b></p>
+        <div class="role">
+          <button type="button" class="on" data-r="Client">👤 Client</button
+          ><button type="button" data-r="Admin">🛡️ Admin</button>
+        </div>
+        <input type="email" placeholder="Email address" required /><input
+          type="password"
+          placeholder="Password"
+          required
+        /><button class="btn" style="width: 100%">Login</button>
+      </form>
+    </div> -->
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

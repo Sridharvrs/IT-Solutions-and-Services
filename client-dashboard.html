@@ -1,0 +1,1372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Client Dashboard | Stackly</title>
+    <link rel="stylesheet" href="css/dash.css" />
+    <link rel="stylesheet" href="css/client-dashboard.css" />
+  </head>
+  <body class="client-dashboard">
+    <aside class="side">
+      <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="Stackly Logo">
+      </a>
+      <div class="me">
+        <img
+          class="av"
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60"
+          alt=""
+          style="width: 44px; height: 44px"
+        />
+        <div><b class="profileName">Rahul Menon</b><small>FreshKart Retail</small></div>
+      </div>
+      <nav class="nv">
+        <button data-m="overview"><span>🏠</span>Overview</button
+        ><button data-m="projects"><span>📁</span>Projects</button
+        ><button data-m="tickets"><span>🎫</span>Support Tickets</button
+        ><button data-m="billing"><span>💳</span>Billing</button
+        ><button data-m="services"><span>🧩</span>Services</button
+        ><button data-m="account"><span>👤</span>My Account</button>
+      </nav>
+      <button class="lo">⏻ Logout</button>
+    </aside>
+    <div class="ov"></div>
+    <div class="main">
+      <header class="top">
+        <button class="burger" aria-label="Toggle sidebar">
+          <i></i><i></i><i></i>
+        </button>
+        <div class="tt">
+          <h1 id="pt">Overview</h1>
+          <small id="clk"></small>
+        </div>
+        <button class="srch">
+          🔍<span> Search modules…</span><kbd>Ctrl K</kbd>
+        </button>
+        <div class="nt">
+          <button class="bell">🔔<i>3</i></button>
+          <div class="dd">
+            <b>Notifications</b>
+            <p>🟢 Backup completed successfully</p>
+            <p>🎫 Ticket update from engineer</p>
+            <p>📄 New document shared</p>
+          </div>
+        </div>
+        <img
+          class="av"
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60"
+          alt=""
+          style="width: 36px; height: 36px"
+        /><button class="tlo">⏻ Logout</button>
+      </header>
+      <div class="pg">
+        <section class="mod" id="overview">
+          <div class="mh">
+            <h2>Welcome back, <span class="profileName"> Name </span>👋</h2>
+            <p>A live summary of your IT environment.</p>
+          </div>
+          <div class="gr c4">
+            <div class="card kpi">
+              <span class="ki">📁</span>
+              <div>
+                <small>Active projects</small
+                ><b data-n="6" data-pre="" data-s="">0</b
+                ><em class="up">+2 this quarter</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">🎫</span>
+              <div>
+                <small>Open tickets</small
+                ><b data-n="3" data-pre="" data-s="">0</b
+                ><em class="dn">1 fewer than last week</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">🟢</span>
+              <div>
+                <small>Service uptime</small
+                ><b data-n="99" data-pre="" data-s=".98%">0</b
+                ><em class="up">above 99.9% SLA</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">💳</span>
+              <div>
+                <small>Next invoice</small
+                ><b data-n="1240" data-pre="$" data-s="">0</b
+                ><em class="up">Due 15 Nov</em>
+              </div>
+            </div>
+          </div>
+          <div class="gr c21">
+            <div class="card">
+              <div class="ch">
+                <h3>Service health</h3>
+                <small>Updated live</small>
+              </div>
+              <div class="tw">
+                <table id="sh">
+                  <thead>
+                    <tr>
+                      <th>Service</th>
+                      <th>Region</th>
+                      <th>Latency</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Web portal</td>
+                      <td>Mumbai</td>
+                      <td>42 ms</td>
+                      <td><span class="pl ok">Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>Database cluster</td>
+                      <td>Mumbai</td>
+                      <td>8 ms</td>
+                      <td><span class="pl ok">Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>Email gateway</td>
+                      <td>Singapore</td>
+                      <td>61 ms</td>
+                      <td><span class="pl wr">Degraded</span></td>
+                    </tr>
+                    <tr>
+                      <td>VPN access</td>
+                      <td>Chennai</td>
+                      <td>35 ms</td>
+                      <td><span class="pl ok">Operational</span></td>
+                    </tr>
+                    <tr>
+                      <td>Backup vault</td>
+                      <td>Frankfurt</td>
+                      <td>—</td>
+                      <td><span class="pl in">Scheduled</span></td>
+                    </tr>
+                    <tr>
+                      <td>Firewall</td>
+                      <td>Edge</td>
+                      <td>3 ms</td>
+                      <td><span class="pl ok">Operational</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Spend by service</h3>
+                <small>This quarter</small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="donut"
+                  data-v="40,25,20,15"
+                  data-l=""
+                  data-h="210"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="gr c3">
+            <div class="card">
+              <div class="ch">
+                <h3>Recent activity</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="feed">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Firewall rules updated</b><br /><small
+                      >Today, 10:42</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Ticket #1047 resolved</b><br /><small>Yesterday</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Invoice INV-2210 issued</b><br /><small
+                      >2 days ago</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Backup verified</b><br /><small>3 days ago</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Upcoming milestones</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="ms">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>ERP migration phase 2</b><br /><small>18 Nov</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Security audit kickoff</b><br /><small>24 Nov</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div><b>Mobile app beta</b><br /><small>02 Dec</small></div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Your account manager</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <img
+                  class="av"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=60"
+                  alt=""
+                  style="width: 64px; height: 64px"
+                />
+                <div>
+                  <b>Priya Nair</b>
+                  <p>Senior Delivery Manager</p>
+                  <small>priya@Stackly.com</small>
+                </div>
+              </div>
+              <p style="margin-top: 12px">
+                <button class="bt" onclick="toast('Call request sent')">
+                  Request call
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Monthly bandwidth (TB)</h3>
+                <small>Last 6 months</small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="bar"
+                  data-v="4,5,4.5,6,7,6.5"
+                  data-l="Jun,Jul,Aug,Sep,Oct,Nov"
+                  data-h="190"
+                ></canvas>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Average response time (ms)</h3>
+                <small>This week</small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="line"
+                  data-v="120,110,95,98,88,82,80"
+                  data-l="Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+                  data-h="190"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Security posture</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <div class="rg">
+                  <div class="ring" data-r="86"><b>86%</b></div>
+                  <small>secure</small>
+                </div>
+                <div>
+                  <div class="bl"><span>Patching</span><b>94%</b></div>
+                  <div class="pr"><i data-w="94"></i></div>
+                  <div class="bl"><span>MFA coverage</span><b>82%</b></div>
+                  <div class="pr"><i data-w="82"></i></div>
+                  <div class="bl"><span>Backups</span><b>100%</b></div>
+                  <div class="pr"><i data-w="100"></i></div>
+                  <div class="bl"><span>Phishing training</span><b>68%</b></div>
+                  <div class="pr"><i data-w="68"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Live status</h3>
+                <small></small>
+              </div>
+              <p class="big">Latency <b id="lat">42</b> ms</p>
+              <p>All core systems monitored 24/7 from our Salem SOC.</p>
+              <div class="bl"><span>CPU load</span><b>38%</b></div>
+              <div class="pr"><i data-w="38"></i></div>
+              <div class="bl"><span>Memory</span><b>54%</b></div>
+              <div class="pr"><i data-w="54"></i></div>
+              <div class="bl"><span>Storage</span><b>61%</b></div>
+              <div class="pr"><i data-w="61"></i></div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="projects">
+          <div class="mh">
+            <h2>Projects</h2>
+            <p>Track delivery, milestones and documents.</p>
+          </div>
+          <div class="gr c3">
+            <div class="card">
+              <div class="ch">
+                <h3>ERP migration</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <div class="rg">
+                  <div class="ring" data-r="72"><b>72%</b></div>
+                  <small>complete</small>
+                </div>
+                <div>
+                  <p>Moving finance and stock to cloud ERP.</p>
+                  <small>Due 20 Dec</small>
+                  <div class="tm">
+                    <img
+                      class="av"
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=60"
+                      alt=""
+                      style="width: 28px; height: 28px"
+                    /><img
+                      class="av"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=60"
+                      alt=""
+                      style="width: 28px; height: 28px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Customer mobile app</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <div class="rg">
+                  <div class="ring" data-r="45"><b>45%</b></div>
+                  <small>complete</small>
+                </div>
+                <div>
+                  <p>iOS and Android app for orders.</p>
+                  <small>Due 15 Jan</small>
+                  <div class="tm">
+                    <img
+                      class="av"
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60"
+                      alt=""
+                      style="width: 28px; height: 28px"
+                    /><img
+                      class="av"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=60"
+                      alt=""
+                      style="width: 28px; height: 28px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Network refresh</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <div class="rg">
+                  <div class="ring" data-r="91"><b>91%</b></div>
+                  <small>complete</small>
+                </div>
+                <div>
+                  <p>New switches and Wi-Fi 6 at 3 sites.</p>
+                  <small>Due 30 Nov</small>
+                  <div class="tm">
+                    <img
+                      class="av"
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=60"
+                      alt=""
+                      style="width: 28px; height: 28px"
+                    /><img
+                      class="av"
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60"
+                      alt=""
+                      style="width: 28px; height: 28px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Milestones</h3>
+                <small></small>
+              </div>
+              <div class="tw">
+                <table id="mt">
+                  <thead>
+                    <tr>
+                      <th>Milestone</th>
+                      <th>Owner</th>
+                      <th>Due</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Data mapping</td>
+                      <td>Arun</td>
+                      <td>12 Nov</td>
+                      <td><span class="pl ok">Done</span></td>
+                    </tr>
+                    <tr>
+                      <td>UAT testing</td>
+                      <td>Meera</td>
+                      <td>25 Nov</td>
+                      <td><span class="pl in">In progress</span></td>
+                    </tr>
+                    <tr>
+                      <td>Go-live rehearsal</td>
+                      <td>Vikram</td>
+                      <td>05 Dec</td>
+                      <td><span class="pl wr">Planned</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hypercare</td>
+                      <td>Priya</td>
+                      <td>20 Dec</td>
+                      <td><span class="pl wr">Planned</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Sprint velocity</h3>
+                <small>Story points</small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="bar"
+                  data-v="24,28,26,32,35,38"
+                  data-l="S1,S2,S3,S4,S5,S6"
+                  data-h="190"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Delivery progress</h3>
+                <small></small>
+              </div>
+              <div class="bl"><span>ERP migration</span><b>72%</b></div>
+              <div class="pr"><i data-w="72"></i></div>
+              <div class="bl"><span>Mobile app</span><b>45%</b></div>
+              <div class="pr"><i data-w="45"></i></div>
+              <div class="bl"><span>Network refresh</span><b>91%</b></div>
+              <div class="pr"><i data-w="91"></i></div>
+              <div class="bl"><span>Cloud backup</span><b>58%</b></div>
+              <div class="pr"><i data-w="58"></i></div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Documents</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="dc">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Architecture diagram v3.pdf</b><br /><small
+                      >Updated 2 days ago</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Test plan.xlsx</b><br /><small>Shared by Meera</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Statement of work.pdf</b><br /><small>Signed</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Go-live checklist.docx</b><br /><small>Draft</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gr c3">
+            <div class="card">
+              <div class="ch">
+                <h3>Risks</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="rk">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Vendor API delay</b><br /><small
+                      >Medium — mitigation agreed</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Data quality gaps</b><br /><small
+                      >Low — cleanup running</small
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Budget used</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <div class="rg">
+                  <div class="ring" data-r="64"><b>64%</b></div>
+                  <small>of budget</small>
+                </div>
+                <p>$48k of $75k spent. On track.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Team online</h3>
+                <small></small>
+              </div>
+              <div class="tm">
+                <img
+                  class="av"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=60"
+                  alt=""
+                  style="width: 46px; height: 46px"
+                /><img
+                  class="av"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=60"
+                  alt=""
+                  style="width: 46px; height: 46px"
+                /><img
+                  class="av"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60"
+                  alt=""
+                  style="width: 46px; height: 46px"
+                /><img
+                  class="av"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=60"
+                  alt=""
+                  style="width: 46px; height: 46px"
+                />
+              </div>
+              <p style="margin-top: 10px">
+                4 engineers assigned to your account.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="tickets">
+          <div class="mh">
+            <h2>Support tickets</h2>
+            <p>Raise issues and chat with an engineer.</p>
+          </div>
+          <div class="gr c4">
+            <div class="card kpi">
+              <span class="ki">📬</span>
+              <div>
+                <small>Open</small><b data-n="3" data-pre="" data-s="">0</b
+                ><em class="up">awaiting reply</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">⏱️</span>
+              <div>
+                <small>Avg response</small
+                ><b data-n="14" data-pre="" data-s="m">0</b
+                ><em class="up">minutes</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">✅</span>
+              <div>
+                <small>Resolved (30d)</small
+                ><b data-n="27" data-pre="" data-s="">0</b
+                ><em class="up">+6 vs last month</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">😊</span>
+              <div>
+                <small>Satisfaction</small
+                ><b data-n="98" data-pre="" data-s="%">0</b
+                ><em class="up">client score</em>
+              </div>
+            </div>
+          </div>
+          <div class="gr c21">
+            <div class="card">
+              <div class="ch">
+                <h3>Ticket history</h3>
+                <small></small>
+              </div>
+              <div class="tl">
+                <input
+                  type="search"
+                  data-t="tkt"
+                  placeholder="Search…"
+                /><select data-t="tkt">
+                  <option value="">All</option>
+                  <option>Open</option>
+                  <option>Resolved</option>
+                  <option>Pending</option>
+                </select>
+              </div>
+              <div class="tw">
+                <table id="tkt">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Subject</th>
+                      <th>Priority</th>
+                      <th>Status</th>
+                      <th>Updated</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#1047</td>
+                      <td>VPN drops at 6pm</td>
+                      <td>High</td>
+                      <td><span class="pl ok">Resolved</span></td>
+                      <td>Yesterday</td>
+                    </tr>
+                    <tr>
+                      <td>#1046</td>
+                      <td>Add new staff mailbox</td>
+                      <td>Low</td>
+                      <td><span class="pl wr">Pending</span></td>
+                      <td>2 days ago</td>
+                    </tr>
+                    <tr>
+                      <td>#1045</td>
+                      <td>Slow ERP report</td>
+                      <td>Medium</td>
+                      <td><span class="pl in">Open</span></td>
+                      <td>3 days ago</td>
+                    </tr>
+                    <tr>
+                      <td>#1044</td>
+                      <td>Printer on VLAN 20</td>
+                      <td>Low</td>
+                      <td><span class="pl ok">Resolved</span></td>
+                      <td>1 week ago</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Create ticket</h3>
+                <small></small>
+              </div>
+              <form class="fm" id="tf">
+                <input
+                  id="ts"
+                  type="text"
+                  placeholder="Subject"
+                  required
+                /><select id="tp">
+                  <option>Low</option>
+                  <option>Medium</option>
+                  <option>High</option>
+                  <option>Critical</option></select
+                ><textarea
+                  rows="4"
+                  placeholder="Describe the issue"
+                  required
+                ></textarea
+                ><button class="bt">Submit ticket</button>
+              </form>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Live chat with engineer</h3>
+                <small>Online</small>
+              </div>
+              <div class="chat" id="cb">
+                <p class="m">
+                  Hi Rahul, I am Vikram from Stackly. How can I help?
+                </p>
+              </div>
+              <form class="tl" id="cf">
+                <input id="ci" placeholder="Type a message…" required /><button
+                  class="bt"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Knowledge base</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="kb">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Reset your VPN password</b><br /><small
+                      >2 min read</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Connect a new laptop to Wi-Fi</b><br /><small
+                      >3 min read</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Spot a phishing email</b><br /><small>4 min read</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Request extra cloud storage</b><br /><small
+                      >2 min read</small
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>SLA targets</h3>
+                <small></small>
+              </div>
+              <div class="bl"><span>Critical in 15 min</span><b>100%</b></div>
+              <div class="pr"><i data-w="100"></i></div>
+              <div class="bl"><span>High in 1 hour</span><b>97%</b></div>
+              <div class="pr"><i data-w="97"></i></div>
+              <div class="bl"><span>Medium in 4 hours</span><b>95%</b></div>
+              <div class="pr"><i data-w="95"></i></div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Tickets by month</h3>
+                <small></small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="line"
+                  data-v="8,11,9,14,10,12"
+                  data-l="Jun,Jul,Aug,Sep,Oct,Nov"
+                  data-h="190"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="billing">
+          <div class="mh">
+            <h2>Billing</h2>
+            <p>Invoices, payment methods and your plan.</p>
+          </div>
+          <div class="gr c4">
+            <div class="card kpi">
+              <span class="ki">💰</span>
+              <div>
+                <small>Outstanding</small
+                ><b data-n="2480" data-pre="$" data-s="">0</b
+                ><em class="dn">2 invoices</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">🧾</span>
+              <div>
+                <small>Paid this year</small
+                ><b data-n="18640" data-pre="$" data-s="">0</b
+                ><em class="up">+12%</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">📦</span>
+              <div>
+                <small>Plan</small><b data-n="899" data-pre="$" data-s="">0</b
+                ><em class="up">Business / month</em>
+              </div>
+            </div>
+            <div class="card kpi">
+              <span class="ki">📅</span>
+              <div>
+                <small>Renewal</small><b data-n="14" data-pre="" data-s="d">0</b
+                ><em class="up">days left</em>
+              </div>
+            </div>
+          </div>
+          <div class="gr c21">
+            <div class="card">
+              <div class="ch">
+                <h3>Invoices</h3>
+                <small></small>
+              </div>
+              <div class="tw">
+                <table id="inv">
+                  <thead>
+                    <tr>
+                      <th>Invoice</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>INV-2210</td>
+                      <td>01 Nov</td>
+                      <td>$1,240</td>
+                      <td><span class="pl wr">Due</span></td>
+                      <td><button class="bt s pay">Pay now</button></td>
+                    </tr>
+                    <tr>
+                      <td>INV-2204</td>
+                      <td>01 Oct</td>
+                      <td>$1,240</td>
+                      <td><span class="pl wr">Due</span></td>
+                      <td><button class="bt s pay">Pay now</button></td>
+                    </tr>
+                    <tr>
+                      <td>INV-2198</td>
+                      <td>01 Sep</td>
+                      <td>$1,190</td>
+                      <td><span class="pl ok">Paid</span></td>
+                      <td>—</td>
+                    </tr>
+                    <tr>
+                      <td>INV-2190</td>
+                      <td>01 Aug</td>
+                      <td>$1,190</td>
+                      <td><span class="pl ok">Paid</span></td>
+                      <td>—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Cost split</h3>
+                <small></small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="donut"
+                  data-v="45,25,18,12"
+                  data-l=""
+                  data-h="210"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="gr c3">
+            <div class="card">
+              <div class="ch">
+                <h3>Payment methods</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="pm">
+                <li>
+                  <span class="dt"></span>
+                  <div><b>Visa ending 4421</b><br /><small>Default</small></div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Bank transfer (NEFT)</b><br /><small>Verified</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div><b>UPI autopay</b><br /><small>Not set</small></div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Your plan: Business</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="pn">
+                <li>
+                  <span class="dt"></span>
+                  <div><b>24/7 monitoring</b><br /><small>Included</small></div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div><b>Security scans</b><br /><small>Monthly</small></div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Phone and chat support</b><br /><small>Included</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Quarterly review</b><br /><small>Included</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Billing contact</h3>
+                <small></small>
+              </div>
+              <p><b>Rahul Menon</b></p>
+              <p>accounts@freshkart.in</p>
+              <p>GSTIN 33ABCDE1234F1Z5</p>
+              <p style="margin-top: 10px">
+                <button class="bt g" onclick="toast('Details updated')">
+                  Edit
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Spend by month ($)</h3>
+                <small></small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="bar"
+                  data-v="1190,1190,1240,1190,1190,1240"
+                  data-l="Jun,Jul,Aug,Sep,Oct,Nov"
+                  data-h="190"
+                ></canvas>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Usage vs plan</h3>
+                <small></small>
+              </div>
+              <div class="bl"><span>Support hours</span><b>64%</b></div>
+              <div class="pr"><i data-w="64"></i></div>
+              <div class="bl"><span>Cloud storage</span><b>72%</b></div>
+              <div class="pr"><i data-w="72"></i></div>
+              <div class="bl"><span>Managed devices</span><b>88%</b></div>
+              <div class="pr"><i data-w="88"></i></div>
+              <div class="bl"><span>User seats</span><b>51%</b></div>
+              <div class="pr"><i data-w="51"></i></div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="services">
+          <div class="mh">
+            <h2>Services</h2>
+            <p>Explore and request additional services.</p>
+          </div>
+          <div class="gr c3">
+            <div class="card">
+              <div class="ch">
+                <h3>Penetration test</h3>
+                <small></small>
+              </div>
+              <div class="sv">
+                <div class="ic">🛡️</div>
+                <p>Find weaknesses before attackers do.</p>
+                <button class="bt req" data-s="Penetration test">
+                  Request
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Cloud cost review</h3>
+                <small></small>
+              </div>
+              <div class="sv">
+                <div class="ic">☁️</div>
+                <p>Cut waste in your cloud bill.</p>
+                <button class="bt req" data-s="Cloud cost review">
+                  Request
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Disaster recovery</h3>
+                <small></small>
+              </div>
+              <div class="sv">
+                <div class="ic">💾</div>
+                <p>Tested restore in under 1 hour.</p>
+                <button class="bt req" data-s="Disaster recovery">
+                  Request
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>BI dashboards</h3>
+                <small></small>
+              </div>
+              <div class="sv">
+                <div class="ic">📊</div>
+                <p>Live reports from your data.</p>
+                <button class="bt req" data-s="BI dashboards">Request</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Mobile app</h3>
+                <small></small>
+              </div>
+              <div class="sv">
+                <div class="ic">📱</div>
+                <p>Native apps built in sprints.</p>
+                <button class="bt req" data-s="Mobile app">Request</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Staff training</h3>
+                <small></small>
+              </div>
+              <div class="sv">
+                <div class="ic">🎓</div>
+                <p>Cyber awareness workshops.</p>
+                <button class="bt req" data-s="Staff training">Request</button>
+              </div>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Active subscriptions</h3>
+                <small></small>
+              </div>
+              <div class="tw">
+                <table id="sb">
+                  <thead>
+                    <tr>
+                      <th>Service</th>
+                      <th>Since</th>
+                      <th>Renews</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Managed IT</td>
+                      <td>Jan 2024</td>
+                      <td>Dec 2026</td>
+                      <td><span class="pl ok">Active</span></td>
+                    </tr>
+                    <tr>
+                      <td>Security monitoring</td>
+                      <td>Mar 2024</td>
+                      <td>Dec 2026</td>
+                      <td><span class="pl ok">Active</span></td>
+                    </tr>
+                    <tr>
+                      <td>Cloud hosting</td>
+                      <td>Jun 2025</td>
+                      <td>Jun 2027</td>
+                      <td><span class="pl ok">Active</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Your requests</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="rq">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Cloud cost review</b><br /><small>Awaiting quote</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="gr c3">
+            <div class="card">
+              <div class="ch">
+                <h3>Recommended for you</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="rc">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Enable MFA for all staff</b><br /><small
+                      >Raises score by 6%</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Upgrade to Enterprise SLA</b><br /><small
+                      >15-min response</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Add log retention</b><br /><small
+                      >Compliance ready</small
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Usage</h3>
+                <small></small>
+              </div>
+              <div class="cv">
+                <canvas
+                  data-k="line"
+                  data-v="30,34,40,38,46,52"
+                  data-l="Jun,Jul,Aug,Sep,Oct,Nov"
+                  data-h="190"
+                ></canvas>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Compliance</h3>
+                <small></small>
+              </div>
+              <div class="bl"><span>ISO 27001</span><b>82%</b></div>
+              <div class="pr"><i data-w="82"></i></div>
+              <div class="bl"><span>GDPR</span><b>90%</b></div>
+              <div class="pr"><i data-w="90"></i></div>
+              <div class="bl"><span>PCI-DSS</span><b>70%</b></div>
+              <div class="pr"><i data-w="70"></i></div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="account">
+          <div class="mh">
+            <h2>My account</h2>
+            <p>Profile, security and team access.</p>
+          </div>
+          <div class="gr c21">
+            <div class="card">
+              <div class="ch">
+                <h3>Profile</h3>
+                <small></small>
+              </div>
+              <div class="pj">
+                <img
+                  class="av"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60"
+                  alt=""
+                  style="width: 84px; height: 84px"
+                />
+                <form class="fm" id="pf" style="flex: 1">
+                  <input value="Rahul Menon" /><input
+                    value="rahul@freshkart.in"
+                    type="email"
+                  /><input value="+91 98765 11223" /><button class="bt">
+                    Save profile
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Security</h3>
+                <small></small>
+              </div>
+              <label class="tg"
+                ><span>Two-factor authentication</span
+                ><input type="checkbox" checked /><i></i></label
+              ><label class="tg"
+                ><span>Login alerts</span
+                ><input type="checkbox" checked /><i></i></label
+              ><label class="tg"
+                ><span>Weekly security report</span
+                ><input type="checkbox" /><i></i></label
+              ><label class="tg"
+                ><span>SMS alerts</span><input type="checkbox" /><i></i
+              ></label>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Team members</h3>
+                <small></small>
+              </div>
+              <div class="tw">
+                <table id="tm">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Role</th>
+                      <th>Access</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rahul Menon</td>
+                      <td>Owner</td>
+                      <td><span class="pl ok">Full</span></td>
+                    </tr>
+                    <tr>
+                      <td>Anita Roy</td>
+                      <td>Finance</td>
+                      <td><span class="pl in">Billing</span></td>
+                    </tr>
+                    <tr>
+                      <td>Karthik S</td>
+                      <td>IT lead</td>
+                      <td><span class="pl in">Tickets</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>Notification preferences</h3>
+                <small></small>
+              </div>
+              <label class="tg"
+                ><span>Ticket updates</span
+                ><input type="checkbox" checked /><i></i></label
+              ><label class="tg"
+                ><span>Invoice reminders</span
+                ><input type="checkbox" checked /><i></i></label
+              ><label class="tg"
+                ><span>Maintenance notices</span
+                ><input type="checkbox" checked /><i></i></label
+              ><label class="tg"
+                ><span>Newsletter</span><input type="checkbox" /><i></i
+              ></label>
+            </div>
+          </div>
+          <div class="gr c2">
+            <div class="card">
+              <div class="ch">
+                <h3>Login history</h3>
+                <small></small>
+              </div>
+              <ul class="fd" id="lh">
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Chrome on Windows · Salem</b><br /><small
+                      >Today 09:12</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Mobile app · Chennai</b><br /><small
+                      >Yesterday 18:40</small
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="dt"></span>
+                  <div>
+                    <b>Chrome on Mac · Mumbai</b><br /><small>3 days ago</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="ch">
+                <h3>API access</h3>
+                <small></small>
+              </div>
+              <p>Key: <code>nxc_live_••••••••9f2a</code></p>
+              <p style="margin: 10px 0">Calls this month</p>
+              <div class="bl"><span>Quota used</span><b>36%</b></div>
+              <div class="pr"><i data-w="36"></i></div>
+              <p style="margin-top: 10px">
+                <button class="bt" onclick="toast('New key generated')">
+                  Rotate key
+                </button>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="cmd">
+      <div>
+        <input placeholder="Jump to a module…" />
+        <div id="cl"></div>
+      </div>
+    </div>
+    <div class="toast"></div>
+    <script src="js/dash.js"></script>
+    <script src="js/client-dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+document.querySelectorAll('.fq button').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('o'));
+document.getElementById('fm').onsubmit=e=>{e.preventDefault();const n=document.getElementById('nm').value.trim();document.getElementById('ok').textContent='Thanks '+n+'! We will reply within one business day.';e.target.reset()};
+document.getElementById('nl').onsubmit=e=>{e.preventDefault();document.getElementById('nk').textContent='Subscribed. Check your inbox.';e.target.reset()};

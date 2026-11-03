@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Stackly IT Solutions</title>
+
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <main class="login-page">
+
+    <!-- LEFT BRANDING PANEL -->
+    <section class="login-visual">
+      <div class="visual-overlay"></div>
+
+      <nav class="login-nav">
+        <a class="logo" href="index.html">
+          <img src="images/logo.webp" alt="Stackly Logo">
+        </a>
+
+        <a href="index.html" class="back-home">
+          <i class="fa-solid fa-arrow-left"></i> Back to website
+        </a>
+      </nav>
+
+      <div class="visual-content">
+        <span class="visual-tag">
+          <i class="fa-solid fa-circle-nodes"></i>
+          YOUR DIGITAL ECOSYSTEM
+        </span>
+
+        <h1>Technology that moves your business <span>forward.</span></h1>
+
+        <p>
+          Access your Stackly workspace and stay connected with the
+          technology solutions powering your business.
+        </p>
+
+        <div class="visual-points">
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Secure access</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <span>Connected workspace</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-headset"></i>
+            <span>Dedicated support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="visual-footer">
+        <span>INNOVATE. CONNECT. GROW.</span>
+        <span>© <span id="loginYear"></span> Stackly</span>
+      </div>
+
+      <div class="visual-orbit orbit-one"></div>
+      <div class="visual-orbit orbit-two"></div>
+      <div class="visual-glow"></div>
+    </section>
+
+
+    <!-- RIGHT LOGIN PANEL -->
+    <section class="login-main">
+
+      <div class="login-container">
+
+        <div class="mobile-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-icon"><i class="fa-solid fa-cube"></i></span>
+            <span>NEXA<span>CORE</span></span>
+          </a>
+        </div>
+
+        <div class="login-heading">
+          <span class="heading-label">WELCOME BACK</span>
+          <h2>Sign in to your <span>account</span></h2>
+          <p>Choose your account type to continue to your workspace.</p>
+        </div>
+
+        <!-- ROLE SELECTION -->
+        <div class="role-heading">
+          <label>Select account type</label>
+        </div>
+
+        <div class="role-selection" id="lm">
+
+          <button type="button"
+            class="role-card active"
+            data-role="client"
+            aria-pressed="true">
+
+            <span class="role-icon">
+              <i class="fa-solid fa-user-tie"></i>
+            </span>
+
+            <span class="role-info">
+              <strong>Client</strong>
+              <small>Access your services</small>
+            </span>
+
+            <span class="role-check">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </button>
+
+          <button type="button"
+            class="role-card"
+            data-role="admin"
+            aria-pressed="false">
+
+            <span class="role-icon admin-icon">
+              <i class="fa-solid fa-user-shield"></i>
+            </span>
+
+            <span class="role-info">
+              <strong>Admin</strong>
+              <small>Manage the platform</small>
+            </span>
+
+            <span class="role-check">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </button>
+
+        </div>
+
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" class="login-form" novalidate>
+
+          <div class="form-group">
+            <label for="email" id="emailLabel">Client Email</label>
+
+            <div class="input-wrap">
+              <i class="fa-regular fa-envelope input-icon"></i>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your client email"
+                autocomplete="username"
+                required>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <div class="password-label">
+              <label for="password">Password</label>
+              <a href="forgot-password.html">Forgot password?</a>
+            </div>
+
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock input-icon"></i>
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required>
+
+              <button type="button"
+                class="password-toggle"
+                id="pwdToggle"
+                aria-label="Show password">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="form-options">
+            <label class="remember-option">
+              <input type="checkbox" id="remember">
+              <span class="custom-check"></span>
+              Remember me
+            </label>
+          </div>
+
+
+          <div id="loginError" class="login-error" role="alert"></div>
+
+
+          <button type="submit" class="login-submit">
+            <span id="btnText">Client Login</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+        </form>
+
+
+        <div class="login-bottom">
+          <div class="secure-note">
+            <i class="fa-solid fa-shield-halved"></i>
+            Secure account access
+          </div>
+
+          <p>
+            New User - 
+            <a href="contact.html">Create account</a>
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

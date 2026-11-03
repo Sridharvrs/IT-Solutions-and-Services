@@ -1,0 +1,2 @@
+const L=['$ nexacore --status','> cloud ........ online','> security ...... 24/7 armed','> uptime ........ 99.9%','> ready to build your next system'];let i=0,j=0,o='';const t=document.getElementById('tm');
+(function k(){if(i>=L.length){setTimeout(()=>{i=0;o='';k()},3000);return}o+=L[i][j++]||'';t.textContent=o;if(j>=L[i].length){o+='\n';i++;j=0;setTimeout(k,350)}else setTimeout(k,45)})();
