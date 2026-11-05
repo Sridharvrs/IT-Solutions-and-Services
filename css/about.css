@@ -1586,7 +1586,7 @@
       rgba(6, 15, 38, 0.91) 48%,
       rgba(7, 30, 55, 0.88) 100%
     ),
-    url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=85")
+    url("../images/img24.webp")
     center / cover no-repeat;
 
   background-attachment: fixed;

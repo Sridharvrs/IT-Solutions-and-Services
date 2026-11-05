@@ -190,6 +190,68 @@ nav .wrap {
   .links .btn {
     width: 100%;
   }
+
+  
+/* ================= MOBILE SIDEBAR CONTACT ================= */
+
+/* Hidden on desktop */
+.mobile-contact {
+  display: none;
+}
+
+@media (max-width: 860px) {
+
+  /* Sidebar layout */
+  .links {
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-y: auto;
+    padding: 85px 18px 25px;
+    gap: 12px;
+  }
+
+  /* Contact section */
+  .links .mobile-contact {
+    display: block;
+    margin-top: auto;
+    padding-top: 22px;
+    border-top: 1px solid rgba(0, 229, 255, 0.25);
+  }
+
+  .mobile-contact h4 {
+    color: var(--ac);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    letter-spacing: 0.5px;
+  }
+
+  .links .mobile-contact a {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 9px 0;
+    border-radius: 0;
+    background: none;
+    color: #b5c5dd;
+    font-size: 12px;
+    transition: 0.3s ease;
+    overflow-wrap: anywhere;
+  }
+
+  .mobile-contact a i {
+    color: var(--ac);
+    font-size: 14px;
+    width: 17px;
+    flex-shrink: 0;
+  }
+
+  .mobile-contact a:hover {
+    color: var(--ac);
+    transform: translateX(4px);
+  }
+}
+
 }
 .hero {
   min-height: 100vh;
@@ -630,6 +692,8 @@ nav .wrap {
   }
 }
 
+
+
 /* ===================== logo ========================= */
 
 .logo {
@@ -921,5 +985,68 @@ nav .wrap {
 
   .foot-legal {
     gap: 13px;
+  }
+}
+
+
+
+
+
+/* ===== MOBILE SIDEBAR CONTACT ===== */
+.mobile-contact {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-y: auto;
+  }
+
+  .links li.mobile-contact {
+    display: block !important;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 229, 255, 0.25);
+    flex-shrink: 0;
+  }
+
+  .mobile-contact h4 {
+    color: var(--ac);
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .links li.mobile-contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    background: none;
+    color: #b5c5dd;
+    font-size: 12px;
+  }
+
+  .mobile-contact a i {
+    color: var(--ac);
+    width: 18px;
+  }
+}
+
+@media (max-width: 860px) {
+  body.menu-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .links {
+    overscroll-behavior: contain;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

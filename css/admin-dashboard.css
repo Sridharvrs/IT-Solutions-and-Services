@@ -1,5 +1,66 @@
-.admin{--ac:#6741d9;--ac2:#f59f00;--card:#fffaf0;--bg:#f5f2fb;--nav:#140a33;--nav2:#2a1466}.admin .card{border:1px solid #f0dcb4;border-top:6px solid var(--ac);border-radius:6px 22px 6px 22px}
-.admin .tw td,.admin th{border-color:#ecdcb8}.ini{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ac);color:#fff;font-size:.72rem;font-weight:700;margin-right:6px}
-.hm{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;margin-bottom:8px}.hm i{aspect-ratio:1;border-radius:3px;background:var(--ac);opacity:calc(.12 + var(--a)*.88)}
-.term{background:#0a0620;color:#7dffb2;font-family:Consolas,monospace;border-radius:10px;padding:12px;height:170px;overflow:auto;margin-bottom:10px;font-size:.88rem}.term p{margin:2px 0}
-.srv .pr{margin:2px 0 8px}.admin .top{border-bottom-color:var(--ac2)}.admin .ch h3:before{content:"▍";color:var(--ac2);margin-right:4px}
+.admin {
+  --ac: #6741d9;
+  --ac2: #f59f00;
+  --card: #fffaf0;
+  --bg: #f5f2fb;
+  --nav: #140a33;
+  --nav2: #2a1466;
+}
+.admin .card {
+  border: 1px solid #f0dcb4;
+  border-top: 6px solid var(--ac);
+  border-radius: 6px 22px 6px 22px;
+}
+.admin .tw td,
+.admin th {
+  border-color: #ecdcb8;
+}
+.ini {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--ac);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-right: 6px;
+}
+.hm {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 3px;
+  margin-bottom: 8px;
+}
+.hm i {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  background: var(--ac);
+  opacity: calc(0.12 + var(--a) * 0.88);
+}
+.term {
+  background: #0a0620;
+  color: #7dffb2;
+  font-family: Consolas, monospace;
+  border-radius: 10px;
+  padding: 12px;
+  height: 170px;
+  overflow: auto;
+  margin-bottom: 10px;
+  font-size: 0.88rem;
+}
+.term p {
+  margin: 2px 0;
+}
+.srv .pr {
+  margin: 2px 0 8px;
+}
+.admin .top {
+  border-bottom-color: var(--ac2);
+}
+.admin .ch h3:before {
+  content: "▍";
+  color: var(--ac2);
+  margin-right: 4px;
+}

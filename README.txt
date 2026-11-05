@@ -1,1 +1,0 @@
-NexaCore IT Solutions website. Open index.html in a browser. Pages: index, services, projects, about, contact. Each has its own css/ and js/ file; css/style.css and js/main.js are shared.

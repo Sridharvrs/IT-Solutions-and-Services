@@ -1,3 +1,49 @@
-.client{--card:#ffffff}.client .card{border:1px solid var(--bd);border-left:6px solid var(--ac)}.client .top{border-bottom-color:var(--ac)}
-.chat{background:#eef2fa;border-radius:12px;height:190px;overflow:auto;padding:10px;display:grid;gap:8px;align-content:start;margin-bottom:10px}.m{padding:8px 12px;border-radius:14px 14px 14px 2px;max-width:82%;background:#fff;border:1px solid var(--bd);animation:in .3s}.m.me{justify-self:end;background:var(--ac);color:#fff;border-radius:14px 14px 2px 14px;border:0}
-.sv{text-align:center}.sv .ic{font-size:2.2rem}.sv p{margin:6px 0 12px;color:var(--mu)}.client .side{background:linear-gradient(180deg,#07203a,#0a3d62)}
+.client {
+  --card: #ffffff;
+}
+.client .card {
+  border: 1px solid var(--bd);
+  border-left: 6px solid var(--ac);
+}
+.client .top {
+  border-bottom-color: var(--ac);
+}
+.chat {
+  background: #eef2fa;
+  border-radius: 12px;
+  height: 190px;
+  overflow: auto;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  margin-bottom: 10px;
+}
+.m {
+  padding: 8px 12px;
+  border-radius: 14px 14px 14px 2px;
+  max-width: 82%;
+  background: #fff;
+  border: 1px solid var(--bd);
+  animation: in 0.3s;
+}
+.m.me {
+  justify-self: end;
+  background: var(--ac);
+  color: #fff;
+  border-radius: 14px 14px 2px 14px;
+  border: 0;
+}
+.sv {
+  text-align: center;
+}
+.sv .ic {
+  font-size: 2.2rem;
+}
+.sv p {
+  margin: 6px 0 12px;
+  color: var(--mu);
+}
+.client .side {
+  background: linear-gradient(180deg, #07203a, #0a3d62);
+}

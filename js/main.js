@@ -9,12 +9,14 @@ const lk = $("#lk"),
 const shut = () => {
   if (lk) lk.classList.remove("open");
   if (bg) bg.classList.remove("x");
+  document.body.classList.remove("menu-open");
 };
 
 if (bg) {
   bg.onclick = () => {
     lk.classList.toggle("open");
     bg.classList.toggle("x");
+    document.body.classList.toggle("menu-open");
   };
 }
 

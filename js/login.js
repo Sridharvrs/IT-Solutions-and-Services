@@ -177,17 +177,17 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      localStorage.removeItem("nexaCoreCurrentUser");
-      sessionStorage.removeItem("nexaCoreCurrentUser");
+      localStorage.removeItem("stacklyCurrentUser");
+      sessionStorage.removeItem("stacklyCurrentUser");
 
       if (rememberCheckbox?.checked) {
         localStorage.setItem(
-          "nexaCoreCurrentUser",
+          "stacklyCurrentUser",
           JSON.stringify(currentUser)
         );
       } else {
         sessionStorage.setItem(
-          "nexaCoreCurrentUser",
+          "stacklyCurrentUser",
           JSON.stringify(currentUser)
         );
       }

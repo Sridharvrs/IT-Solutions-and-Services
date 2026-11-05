@@ -779,7 +779,7 @@
   padding: 100px 0;
   background:
     linear-gradient(#081126e8, #081126f5),
-    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85")
+    url("../images/img30.webp")
     center / cover fixed;
 }
 
@@ -951,7 +951,7 @@
   z-index: -2;
   background:
     linear-gradient(90deg, #050a18f5 0%, #071127ed 55%, #050a18e8 100%),
-    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000&q=85")
+    url("../images/img26.webp")
     center / cover no-repeat;
   opacity: .95;
 }
